@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<head>
-	<title>News: I made another part! | HlHill</title>
-	<link rel="icon" href="/icon.ico" type="image/x-icon" />
-	<style>
+<style>
 		body{
 			font-family: "Google Sans";
 		}
@@ -14,7 +10,7 @@
 			src: url(/font/GoogleSans.woff2) format('woff2');
 			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 		}
-		div{
+		div {
 			width: auto;
 			padding: 5px;
 			border-width: 5px;
@@ -41,21 +37,3 @@
 			text-decoration: none;
 		}
 	</style>
-</head>
-<body>
-	<div id="TopBar">
-		<L>
-			<a href="/">Home</a>
-		</L>
-		<R>
-			<a href="/about.html">About</a>
-		</R>
-	</div>
-	<h1>News: I made another part! </h1>
-	<h2>Date: 2022 -- -- </h2>
-	<p>
-		I made another part named "Products"! <br>
-		I put my "MountainWorld" in! <br>
-		I'm very glad to see it works great! <br>
-	</p>
-</body>

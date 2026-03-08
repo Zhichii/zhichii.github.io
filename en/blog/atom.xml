@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://zhichii.github.io/en/blog</id>
+    <title>HillQiu Blog</title>
+    <updated>2026-03-08T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://zhichii.github.io/en/blog"/>
+    <subtitle>HillQiu Blog</subtitle>
+    <icon>https://zhichii.github.io/en/img/favicon.png</icon>
+    <entry>
+        <title type="html"><![CDATA[我改了很多东西！]]></title>
+        <id>https://zhichii.github.io/en/blog/i-changed-a-lot</id>
+        <link href="https://zhichii.github.io/en/blog/i-changed-a-lot"/>
+        <updated>2026-03-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[我改了很多的东西。]]></summary>
+        <content type="html"><![CDATA[<p>我改了很多的东西。</p>
+<p>具体来说，我首先清空了所有的<strong>博客</strong>，并添加了一条测试博客。</p>
+<p>随后，我改变了<strong>页脚</strong>，添加了很多我的联系方式和我的作品。</p>
+<p>然后，我对<a class="" href="https://zhichii.github.io/en/"><strong>主页</strong></a>进行了修改，调整了<strong>配色</strong>，删除了那些默认的特性条目。</p>
+<p>最后，我开始着手修改文档。</p>
+<p>说句实话我不知道我要写什么，因为个人博客嘛，用文档的形式怎么说都是有点不妥的。</p>
+<p>不过我还是尝试弄了出来，打算用“我的xxxx年”这种形式。</p>
+<p><strong>没有依赖人工智能！</strong></p>
+<p>说句实话，在改的过程当中我很小心，因为我怕删除了某些东西之后，我就没有办法照着学了。</p>
+<p>不过其实这不成问题，因为有教程摆在那。</p>]]></content>
+        <author>
+            <name>山邱HillQiu</name>
+            <uri>https://space.bilibili.com/521877155</uri>
+        </author>
+        <category label="发布" term="发布"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[测试]]></title>
+        <id>https://zhichii.github.io/en/blog/test</id>
+        <link href="https://zhichii.github.io/en/blog/test"/>
+        <updated>2026-03-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[尝试发一条blog。]]></summary>
+        <content type="html"><![CDATA[<p>尝试发一条blog。</p>]]></content>
+        <author>
+            <name>山邱HillQiu</name>
+            <uri>https://space.bilibili.com/521877155</uri>
+        </author>
+        <category label="尝试" term="尝试"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I updated the most pages of my website!]]></title>
+        <id>https://zhichii.github.io/en/blog/i-updated-the-most-pages-of-my-website</id>
+        <link href="https://zhichii.github.io/en/blog/i-updated-the-most-pages-of-my-website"/>
+        <updated>2023-04-05T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I changed the most pages of my website!]]></summary>
+        <content type="html"><![CDATA[<p>I changed the most pages of my website!</p>
+<p>Because of my nickname has changed, and my English has been level-up!</p>
+<p>Comapre to one year before, today it is changing more!</p>
+<p><em>2026年3月8日迁移至此。</em></p>]]></content>
+        <author>
+            <name>山邱HillQiu</name>
+            <uri>https://space.bilibili.com/521877155</uri>
+        </author>
+        <category label="发布" term="发布"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I brought some colors to links!]]></title>
+        <id>https://zhichii.github.io/en/blog/i-brought-some-colours-to-links</id>
+        <link href="https://zhichii.github.io/en/blog/i-brought-some-colours-to-links"/>
+        <updated>2022-05-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I made links purple!]]></summary>
+        <content type="html"><![CDATA[<p>I made links purple!</p>
+<p>They are more colourful now!</p>
+<p>Links can now more beautiful!</p>
+<p><em>2026年3月8日迁移至此。原文发布时间不明。</em></p>]]></content>
+        <author>
+            <name>山邱HillQiu</name>
+            <uri>https://space.bilibili.com/521877155</uri>
+        </author>
+        <category label="发布" term="发布"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I made another part!]]></title>
+        <id>https://zhichii.github.io/en/blog/i-made-another-part</id>
+        <link href="https://zhichii.github.io/en/blog/i-made-another-part"/>
+        <updated>2022-05-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I made another part named "Products"!]]></summary>
+        <content type="html"><![CDATA[<p>I made another part named "Products"!</p>
+<p>I put my "MountainWorld" in!</p>
+<p>I'm very glad to see it works great!</p>
+<p><em>2026年3月8日迁移至此。原文发布时间不明。</em></p>]]></content>
+        <author>
+            <name>山邱HillQiu</name>
+            <uri>https://space.bilibili.com/521877155</uri>
+        </author>
+        <category label="发布" term="发布"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[I build this Web!]]></title>
+        <id>https://zhichii.github.io/en/blog/i-built-this-website</id>
+        <link href="https://zhichii.github.io/en/blog/i-built-this-website"/>
+        <updated>2022-05-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I'm very glad to see I build this website!]]></summary>
+        <content type="html"><![CDATA[<p>I'm very glad to see I build this website!</p>
+<p>I use HTML and GitHub Pages to build this website.</p>
+<p>Thanks for HTML and GitHub!</p>
+<p><em>2026年3月8日迁移至此。原文时间不明。</em></p>]]></content>
+        <author>
+            <name>山邱HillQiu</name>
+            <uri>https://space.bilibili.com/521877155</uri>
+        </author>
+        <category label="发布" term="发布"/>
+    </entry>
+</feed>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="rss.xsl"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+    <channel>
+        <title>HillQiu Blog</title>
+        <link>https://zhichii.github.io/en/blog</link>
+        <description>HillQiu Blog</description>
+        <lastBuildDate>Sun, 08 Mar 2026 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <language>en</language>
+        <item>
+            <title><![CDATA[我改了很多东西！]]></title>
+            <link>https://zhichii.github.io/en/blog/i-changed-a-lot</link>
+            <guid>https://zhichii.github.io/en/blog/i-changed-a-lot</guid>
+            <pubDate>Sun, 08 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[我改了很多的东西。]]></description>
+            <content:encoded><![CDATA[<p>我改了很多的东西。</p>
+<p>具体来说，我首先清空了所有的<strong>博客</strong>，并添加了一条测试博客。</p>
+<p>随后，我改变了<strong>页脚</strong>，添加了很多我的联系方式和我的作品。</p>
+<p>然后，我对<a class="" href="https://zhichii.github.io/en/"><strong>主页</strong></a>进行了修改，调整了<strong>配色</strong>，删除了那些默认的特性条目。</p>
+<p>最后，我开始着手修改文档。</p>
+<p>说句实话我不知道我要写什么，因为个人博客嘛，用文档的形式怎么说都是有点不妥的。</p>
+<p>不过我还是尝试弄了出来，打算用“我的xxxx年”这种形式。</p>
+<p><strong>没有依赖人工智能！</strong></p>
+<p>说句实话，在改的过程当中我很小心，因为我怕删除了某些东西之后，我就没有办法照着学了。</p>
+<p>不过其实这不成问题，因为有教程摆在那。</p>]]></content:encoded>
+            <category>发布</category>
+        </item>
+        <item>
+            <title><![CDATA[测试]]></title>
+            <link>https://zhichii.github.io/en/blog/test</link>
+            <guid>https://zhichii.github.io/en/blog/test</guid>
+            <pubDate>Sat, 07 Mar 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[尝试发一条blog。]]></description>
+            <content:encoded><![CDATA[<p>尝试发一条blog。</p>]]></content:encoded>
+            <category>尝试</category>
+        </item>
+        <item>
+            <title><![CDATA[I updated the most pages of my website!]]></title>
+            <link>https://zhichii.github.io/en/blog/i-updated-the-most-pages-of-my-website</link>
+            <guid>https://zhichii.github.io/en/blog/i-updated-the-most-pages-of-my-website</guid>
+            <pubDate>Wed, 05 Apr 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[I changed the most pages of my website!]]></description>
+            <content:encoded><![CDATA[<p>I changed the most pages of my website!</p>
+<p>Because of my nickname has changed, and my English has been level-up!</p>
+<p>Comapre to one year before, today it is changing more!</p>
+<p><em>2026年3月8日迁移至此。</em></p>]]></content:encoded>
+            <category>发布</category>
+        </item>
+        <item>
+            <title><![CDATA[I brought some colors to links!]]></title>
+            <link>https://zhichii.github.io/en/blog/i-brought-some-colours-to-links</link>
+            <guid>https://zhichii.github.io/en/blog/i-brought-some-colours-to-links</guid>
+            <pubDate>Sun, 22 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[I made links purple!]]></description>
+            <content:encoded><![CDATA[<p>I made links purple!</p>
+<p>They are more colourful now!</p>
+<p>Links can now more beautiful!</p>
+<p><em>2026年3月8日迁移至此。原文发布时间不明。</em></p>]]></content:encoded>
+            <category>发布</category>
+        </item>
+        <item>
+            <title><![CDATA[I made another part!]]></title>
+            <link>https://zhichii.github.io/en/blog/i-made-another-part</link>
+            <guid>https://zhichii.github.io/en/blog/i-made-another-part</guid>
+            <pubDate>Sat, 21 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[I made another part named "Products"!]]></description>
+            <content:encoded><![CDATA[<p>I made another part named "Products"!</p>
+<p>I put my "MountainWorld" in!</p>
+<p>I'm very glad to see it works great!</p>
+<p><em>2026年3月8日迁移至此。原文发布时间不明。</em></p>]]></content:encoded>
+            <category>发布</category>
+        </item>
+        <item>
+            <title><![CDATA[I build this Web!]]></title>
+            <link>https://zhichii.github.io/en/blog/i-built-this-website</link>
+            <guid>https://zhichii.github.io/en/blog/i-built-this-website</guid>
+            <pubDate>Fri, 20 May 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[I'm very glad to see I build this website!]]></description>
+            <content:encoded><![CDATA[<p>I'm very glad to see I build this website!</p>
+<p>I use HTML and GitHub Pages to build this website.</p>
+<p>Thanks for HTML and GitHub!</p>
+<p><em>2026年3月8日迁移至此。原文时间不明。</em></p>]]></content:encoded>
+            <category>发布</category>
+        </item>
+    </channel>
+</rss>

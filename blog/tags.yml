@@ -1,0 +1,14 @@
+try:
+  label: 尝试
+  permalink: /try
+  description: 也就是我的一些尝试。
+
+publication:
+  label: 发布
+  permalink: /publication
+  description: 重要的事情会在这里说。
+
+report:
+  label: 报告
+  permalink: /report
+  description: 一些自己观察的报告，整理一些观察和数据。

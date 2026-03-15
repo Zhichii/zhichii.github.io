@@ -1,0 +1,17 @@
+{
+  "name": {
+    "message": "山邱HillQiu"
+  },
+  "desc": {
+    "message": "山邱HillQiu的个人网站"
+  },
+  "home": {
+    "message": "主页"
+  },
+  "tagline": {
+    "message": "我也不知道为什么用Docusaurus当个人主页。"
+  },
+  "start": {
+    "message": "开始探索"
+  }
+}

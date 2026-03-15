@@ -1,0 +1,98 @@
+{
+  "title": {
+    "en": "HillQiu",
+    "zh-Hans": "山邱HillQiu"
+  },
+  "tagline": {
+    "en": "我也不知道为什么用Docusaurus当个人主页。",
+    "zh-Hans": "山邱HillQiu"
+  },
+  "footer.contacts": {
+    "en": "Contacts",
+    "zh-Hans": "联系"
+  },
+  "footer.contacts.bilibili": {
+    "en": "BiliBili",
+    "zh-Hans": "哔哩哔哩"
+  },
+  "footer.contacts.gmail": {
+    "en": "Gmail",
+    "zh-Hans": "谷歌邮箱"
+  },
+  "footer.launchers": {
+    "en": "Minecraft Launchers",
+    "zh-Hans": "Minecraft启动器"
+  },
+  "footer.launchers.riverlauncher2": {
+    "en": "RiverLauncher2",
+    "zh-Hans": "河流启动器2"
+  },
+  "footer.launchers.riverlauncher3": {
+    "en": "RiverLauncher3",
+    "zh-Hans": "河流启动器3"
+  },
+  "footer.launchers.xmcx": {
+    "en": "XMCX Launcher",
+    "zh-Hans": "XMCX启动器"
+  },
+  "footer.launchers.launcherqiu-core": {
+    "en": "LauncherQiu-Core",
+    "zh-Hans": "启动器Qiu—核心"
+  },
+  "footer.games": {
+    "en": "Games",
+    "zh-Hans": "游戏"
+  },
+  "footer.games.mountainworld": {
+    "en": "MountainWorld",
+    "zh-Hans": "邱的世界"
+  },
+  "footer.games.craeft": {
+    "en": "Craeft",
+    "zh-Hans": "千方百块"
+  },
+  "footer.mods": {
+    "en": "Minecraft Mods",
+    "zh-Hans": "Minecraft模组"
+  },
+  "footer.mods.whitestone": {
+    "en": "Whitestone Mod",
+    "zh-Hans": "白石模组"
+  },
+  "footer.more": {
+    "en": "More",
+    "zh-Hans": "更多"
+  },
+  "footer.more.videos": {
+    "en": "Videos",
+    "zh-Hans": "视频发布"
+  },
+  "footer.more.tk4cpp": {
+    "en": "Tcl/Tk for C++",
+    "zh-Hans": "C++的Tcl/Tk"
+  },
+  "footer.more.hti": {
+    "en": "HillQiu Text Interface",
+    "zh-Hans": "山邱文本用户界面"
+  },
+  "footer.more.twt2.3": {
+    "en": "Talk with Them 2.3",
+    "zh-Hans": "与它们聊天2.3"
+  },
+  "footer.copyright": {
+    "en": "Copyright",
+    "zh-Hans": "版权所有"
+  },
+  "footer.copyright-end": {
+    "en": "HillQiu. Built with Docusaurus. ",
+    "zh-Hans": "山邱HillQiu。使用Docusaurus构建。"
+  },
+  "navbar.documents": {
+    "en": "Documents",
+    "zh-Hans": "文档"
+  },
+  "navbar.blogs": {
+    "en": "Blogs",
+    "zh-Hans": "博客"
+  }
+}

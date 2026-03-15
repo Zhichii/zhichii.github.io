@@ -1,0 +1,17 @@
+{
+  "name": {
+    "message": "HillQiu"
+  },
+  "desc": {
+    "message": "HillQiu's personal website"
+  },
+  "home": {
+    "message": "Home Page"
+  },
+  "tagline": {
+    "message": "I don't even know why I chose Docusaurus for my personal website."
+  },
+  "start": {
+    "message": "Start Exploring"
+  }
+}

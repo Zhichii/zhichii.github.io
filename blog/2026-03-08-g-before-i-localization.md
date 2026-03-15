@@ -1,0 +1,26 @@
+---
+slug: localization
+title: 我本地化了很多东西！
+authors: hillqiu
+tags: [publication]
+---
+
+我着手开始本地化……
+
+<!-- truncate -->
+
+我跟着教程创建了i18n目录，并很成功地试验了文档的本地化。
+
+但，页脚怎么本地化？
+
+`docusaurus.config.ts`的话，从`@docusaurus/Translate`导入，竟然会报错。
+
+于是，我直接去参考了Facebook的做法，竟然是弄了两个配套的文件：`docusaurus.config.localized.json`和`docusaurus.config.localized.json.d.json.ts`，并在`docusaurus.config.ts`里定义了`getLocalizedConfigValue`函数。
+
+TypeScript真是神秘啊。
+
+这些东西我都没学过。我不知道为什么两个文件配套，也不知道`getLocalizedConfigValue`为什么能用。
+
+我只是照着官方的项目复制了下来，然后恰好跑了起来。
+
+我的学习能力强吗？

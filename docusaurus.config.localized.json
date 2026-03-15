@@ -94,5 +94,9 @@
   "navbar.blogs": {
     "en": "Blogs",
     "zh-Hans": "博客"
+  },
+  "navbar.comments": {
+    "en": "Global Comments",
+    "zh-Hans": "全局评论区"
   }
 }

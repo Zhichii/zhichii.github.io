@@ -5,6 +5,9 @@ authors: hillqiu
 tags: [publication]
 ---
 
+import Giscus, { Theme } from '@giscus/react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 我着手开始本地化……
 
 <!-- truncate -->
@@ -24,3 +27,17 @@ TypeScript真是神秘啊。
 我只是照着官方的项目复制了下来，然后恰好跑了起来。
 
 我的学习能力强吗？
+
+<Giscus
+    repo={"zhichii/zhichii.github.io"}
+    repoId={"R_kgDOHXx1Mg"}
+    category={"General"}
+    categoryId={"DIC_kwDOHXx1Ms4C4YDq"}
+    mapping="number"
+    term="7"
+    reactionsEnabled={"0"}
+    emitMetadata={"0"}
+    inputPosition={"top"}
+    theme={"preferred_color_scheme"}
+    lang={useDocusaurusContext().i18n.currentLocale}
+/>

@@ -2,11 +2,17 @@
   "name": {
     "message": "山邱HillQiu"
   },
+  "home": {
+    "message": "主页"
+  },
+  "comments": {
+    "message": "评论区"
+  },
   "desc": {
     "message": "山邱HillQiu的个人网站"
   },
-  "home": {
-    "message": "主页"
+  "desc.comments": {
+    "message": "在这里，你可以随意发表合法的评论！"
   },
   "tagline": {
     "message": "我也不知道为什么用Docusaurus当个人主页。"

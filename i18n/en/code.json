@@ -2,11 +2,17 @@
   "name": {
     "message": "HillQiu"
   },
+  "home": {
+    "message": "Home Page"
+  },
+  "comments": {
+    "message": "Comments"
+  },
   "desc": {
     "message": "HillQiu's personal website"
   },
-  "home": {
-    "message": "Home Page"
+  "desc.comments": {
+    "message": "You can comment everything valid here! "
   },
   "tagline": {
     "message": "I don't even know why I chose Docusaurus for my personal website."

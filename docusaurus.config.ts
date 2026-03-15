@@ -101,7 +101,13 @@ const config: Config = {
         {
           to: '/blog',
           label: getLocalizedConfigValue('navbar.blogs'),
-          position: 'left'},
+          position: 'left'
+        },
+        {
+          to: '/comments',
+          label: getLocalizedConfigValue('navbar.comments'),
+          position: 'left'
+        },
         {
           type: 'localeDropdown',
           position: 'right',

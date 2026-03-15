@@ -5,6 +5,9 @@ authors: hillqiu
 tags: [report]
 ---
 
+import Giscus, { Theme } from '@giscus/react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
 严谨地说：**Hunter Alpha至少使用了MiMo的tokenizer。**
 
 起因是我的网友测试，用它写小说，顺便提供了输出：7.5k tokens。
@@ -134,3 +137,17 @@ OpenRouter API显示**403** tokens。
 | Qwen3.5 | 379 |
 
 误差为2 tokens，那还说啥了，肯定就是MiMo的tokenizer。
+
+<Giscus
+    repo={"zhichii/zhichii.github.io"}
+    repoId={"R_kgDOHXx1Mg"}
+    category={"General"}
+    categoryId={"DIC_kwDOHXx1Ms4C4YDq"}
+    mapping="number"
+    term="5"
+    reactionsEnabled={"0"}
+    emitMetadata={"0"}
+    inputPosition={"top"}
+    theme={"preferred_color_scheme"}
+    lang={useDocusaurusContext().i18n.currentLocale}
+/>

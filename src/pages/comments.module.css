@@ -1,0 +1,17 @@
+.container {
+    margin: 0 auto;
+    max-width: inherit;
+    padding: 0 var(--ifm-spacing-horizontal);
+    width: 100%;
+    margin-bottom: 2rem !important;
+    margin-top: 2rem !important;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 calc(var(--ifm-spacing-horizontal) * -1);
+    justify-content: center;
+}
+
+/* 哈哈，其实借鉴的Docusaurus的。应该是theme-classic？我也不是很了解。 */

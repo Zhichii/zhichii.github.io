@@ -1,0 +1,68 @@
+---
+slug: 26w11a
+title: 添加评论功能
+authors: hillqiu
+tags: [report]
+---
+
+import Giscus, { Theme } from '@giscus/react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {useColorMode} from '@docusaurus/theme-common';
+
+昨天，我更新了[主意](../docs/ideas/intro)。但是，人们没有办法在它下面发表评论。于是，我就研究了一下。
+
+<!-- truncate -->
+
+我找到了一个东西叫[Giscus](https://giscus.app)。基于GitHub Discussion。
+
+我一看觉得这玩意不错，于是就加了进来。
+
+由于[Giscus](https://giscus.app)生成的是`<script>`，所以实际上我还研究了半天怎么将`<script>`嵌入到`mdx`/`ts`里。
+
+然后我才发现，原来Giscus已经提供了[它的React组件](https://github.com/giscus/giscus-component)！我对React一点了解都没有，但反正看着README就弄好了呗。
+
+*我怎么好像写成教程了……*
+
+**关于Giscus的配置过程，请自行寻找教程。**
+
+```ts title="ts"
+import Giscus, { Theme } from '@giscus/react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {useColorMode} from '@docusaurus/theme-common';
+
+<Giscus
+    // 这些id可以去giscus.app上获取
+    repo={"zhichii/zhichii.github.io"} # 仓库名称
+    repoId={"..."}
+    category={"General"} # 我选的，好吧
+    categoryId={"..."}
+    // 这里实际上我怕不够精确所以选用了数字mapping
+    mapping="number"
+    term="..." // 然后这里我手动管理
+    // 这些按喜好
+    reactionsEnabled={"0"}
+    emitMetadata={"0"}
+    inputPosition={"top"}
+    // 下面是对于颜色和语言的同步
+    theme={useColorMode().colorMode} // 致谢https://zhuanlan.zhihu.com/p/717218474
+    lang={useDocusaurusContext().i18n.currentLocale}
+/>
+```
+
+我还顺便将源代码上传到了[仓库](https://github.com/zhichii/zhichii.github.io)了。
+
+下面是本页的评论区。
+
+<Giscus
+    repo={"zhichii/zhichii.github.io"}
+    repoId={"R_kgDOHXx1Mg"}
+    category={"General"}
+    categoryId={"DIC_kwDOHXx1Ms4C4YDq"}
+    mapping="number"
+    term="8"
+    reactionsEnabled={"0"}
+    emitMetadata={"0"}
+    inputPosition={"top"}
+    theme={useColorMode().colorMode}
+    lang={useDocusaurusContext().i18n.currentLocale}
+/>

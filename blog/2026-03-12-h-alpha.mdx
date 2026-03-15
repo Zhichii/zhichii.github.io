@@ -7,6 +7,7 @@ tags: [report]
 
 import Giscus, { Theme } from '@giscus/react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {useColorMode} from '@docusaurus/theme-common';
 
 严谨地说：**Hunter Alpha至少使用了MiMo的tokenizer。**
 
@@ -148,6 +149,6 @@ OpenRouter API显示**403** tokens。
     reactionsEnabled={"0"}
     emitMetadata={"0"}
     inputPosition={"top"}
-    theme={"preferred_color_scheme"}
+    theme={useColorMode().colorMode}
     lang={useDocusaurusContext().i18n.currentLocale}
 />

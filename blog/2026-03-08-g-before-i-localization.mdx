@@ -7,6 +7,7 @@ tags: [publication]
 
 import Giscus, { Theme } from '@giscus/react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {useColorMode} from '@docusaurus/theme-common';
 
 我着手开始本地化……
 
@@ -38,6 +39,6 @@ TypeScript真是神秘啊。
     reactionsEnabled={"0"}
     emitMetadata={"0"}
     inputPosition={"top"}
-    theme={"preferred_color_scheme"}
+    theme={useColorMode().colorMode}
     lang={useDocusaurusContext().i18n.currentLocale}
 />

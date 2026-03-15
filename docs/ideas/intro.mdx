@@ -4,6 +4,7 @@ sidebar_position: 1
 
 import Giscus, { Theme } from '@giscus/react';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {useColorMode} from '@docusaurus/theme-common';
 
 # 基本信息
 
@@ -50,6 +51,6 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
     reactionsEnabled={"0"}
     emitMetadata={"0"}
     inputPosition={"top"}
-    theme={"preferred_color_scheme"}
+    theme={useColorMode().colorMode}
     lang={useDocusaurusContext().i18n.currentLocale}
 />

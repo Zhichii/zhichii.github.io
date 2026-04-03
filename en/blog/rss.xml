@@ -4,10 +4,45 @@
         <title>HillQiu Blog</title>
         <link>https://zhichii.github.io/en/blog</link>
         <description>HillQiu Blog</description>
-        <lastBuildDate>Sun, 15 Mar 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 03 Apr 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
+        <item>
+            <title><![CDATA[疑似看到真的DeepSeek泄漏]]></title>
+            <link>https://zhichii.github.io/en/blog/26w14a-deepseek-leak</link>
+            <guid>https://zhichii.github.io/en/blog/26w14a-deepseek-leak</guid>
+            <pubDate>Fri, 03 Apr 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[事情是这样的，我只是看到了一条有关DeepSeek的评论。]]></description>
+            <content:encoded><![CDATA[<p>事情是这样的，我只是看到了一条有关DeepSeek的评论。</p>
+<p>根据这条评论，DeepSeek的下一代重大更新应该包含<strong>快速模式</strong>、<strong>专家模式</strong>和<strong>图像模式</strong>。</p>
+<p><img decoding="async" loading="lazy" alt="img" src="https://zhichii.github.io/en/assets/images/26w14a-6f8be6ff96b2e0f398469507927d475a.png" width="742" height="571" class="img_ev3q"></p>
+<p><a href="https://www.bilibili.com/video/BV1uE9FBUE7u?comment_on=1&amp;comment_root_id=295030261905&amp;share_tag=s_i#reply295030261905" target="_blank" rel="noopener noreferrer" class="">我看到的这条评论链接</a></p>
+<p>也可看<a href="https://www.bilibili.com/video/BV1PC9MBeE1C" target="_blank" rel="noopener noreferrer" class="">这条视频</a>。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="依据">依据<a href="https://zhichii.github.io/en/blog/26w14a-deepseek-leak#%E4%BE%9D%E6%8D%AE" class="hash-link" aria-label="Direct link to 依据" title="Direct link to 依据" translate="no">​</a></h2>
+<p><em>注：这两个文件比较大。</em></p>
+<p>我目前还是<a href="https://fe-static.deepseek.com/chat/static/main.cd620c850b.js" target="_blank" rel="noopener noreferrer" class="">main.cd620c850b.js</a>，<del>但如果你访问<a href="https://fe-static.deepseek.com/chat/static/main.6184d0a79e.js" target="_blank" rel="noopener noreferrer" class="">main.6184d0a79e.js</a>，虽然很大，但你应该能够找到<code>expert mode</code>。</del></p>
+<p>啊啊！！我正在写呢，<a href="https://fe-static.deepseek.com/chat/static/main.6184d0a79e.js" target="_blank" rel="noopener noreferrer" class="">main.6184d0a79e.js</a>就没了！我甚至没来得及Wayback Machine一下。</p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="概览">概览<a href="https://zhichii.github.io/en/blog/26w14a-deepseek-leak#%E6%A6%82%E8%A7%88" class="hash-link" aria-label="Direct link to 概览" title="Direct link to 概览" translate="no">​</a></h2>
+<ul>
+<li class="">
+<p><strong>快速模式</strong>：仅识别图片与文件中的文字</p>
+</li>
+<li class="">
+<p><strong>专家模式</strong>：仅支持文件上传</p>
+</li>
+<li class="">
+<p><strong>图像模式</strong>：上传文件，支持各类文档和图片</p>
+</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="猜测">猜测<a href="https://zhichii.github.io/en/blog/26w14a-deepseek-leak#%E7%8C%9C%E6%B5%8B" class="hash-link" aria-label="Direct link to 猜测" title="Direct link to 猜测" translate="no">​</a></h2>
+<p><em>注：纯猜测，无依据！</em></p>
+<p>我猜，快速模式与现在无差别，也就是类似V3.2（非思考和思考，可控制，也有可能是自适应思考？！）；</p>
+<p>专家模式应该类似V3.2 Speciale，即深入思考；</p>
+<p>图像模式可能是加上视觉的快速模式，可能是可控制思考或自适应思考。</p>
+]]></content:encoded>
+            <category>报告</category>
+        </item>
         <item>
             <title><![CDATA[添加评论功能]]></title>
             <link>https://zhichii.github.io/en/blog/26w11a</link>
@@ -25,7 +60,7 @@
 <p>我还顺便将源代码上传到了<a href="https://github.com/zhichii/zhichii.github.io" target="_blank" rel="noopener noreferrer" class="">仓库</a>了。</p>
 <p>下面是本页的评论区。</p>
 ]]></content:encoded>
-            <category>报告</category>
+            <category>发布</category>
         </item>
         <item>
             <title><![CDATA[Hunter/Healer Alpha到底是哪家的？]]></title>

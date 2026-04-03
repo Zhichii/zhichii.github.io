@@ -1,0 +1,62 @@
+---
+slug: 26w14a-deepseek-leak
+title: 疑似看到真的DeepSeek泄漏
+authors: hillqiu
+tags: [report]
+---
+
+import Giscus, { Theme } from '@giscus/react';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import {useColorMode} from '@docusaurus/theme-common';
+
+事情是这样的，我只是看到了一条有关DeepSeek的评论。
+
+根据这条评论，DeepSeek的下一代重大更新应该包含**快速模式**、**专家模式**和**图像模式**。
+
+<!-- truncate -->
+
+![img](/img/26w14a.png)
+
+[我看到的这条评论链接](https://www.bilibili.com/video/BV1uE9FBUE7u?comment_on=1&comment_root_id=295030261905&share_tag=s_i#reply295030261905)
+
+也可看[这条视频](https://www.bilibili.com/video/BV1PC9MBeE1C)。
+
+## 依据
+
+*注：这两个文件比较大。*
+
+我目前还是[main.cd620c850b.js](https://fe-static.deepseek.com/chat/static/main.cd620c850b.js)，~~但如果你访问[main.6184d0a79e.js](https://fe-static.deepseek.com/chat/static/main.6184d0a79e.js)，虽然很大，但你应该能够找到`expert mode`。~~
+
+啊啊！！我正在写呢，[main.6184d0a79e.js](https://fe-static.deepseek.com/chat/static/main.6184d0a79e.js)就没了！我甚至没来得及Wayback Machine一下。
+
+## 概览
+
+- **快速模式**：仅识别图片与文件中的文字
+
+- **专家模式**：仅支持文件上传
+
+- **图像模式**：上传文件，支持各类文档和图片
+
+## 猜测
+
+*注：纯猜测，无依据！*
+
+我猜，快速模式与现在无差别，也就是类似V3.2（非思考和思考，可控制，也有可能是自适应思考？！）；
+
+专家模式应该类似V3.2 Speciale，即深入思考；
+
+图像模式可能是加上视觉的快速模式，可能是可控制思考或自适应思考。
+
+<Giscus
+    repo={"zhichii/zhichii.github.io"}
+    repoId={"R_kgDOHXx1Mg"}
+    category={"General"}
+    categoryId={"DIC_kwDOHXx1Ms4C4YDq"}
+    mapping="number"
+    term="11"
+    reactionsEnabled={"0"}
+    emitMetadata={"0"}
+    inputPosition={"top"}
+    theme={useColorMode().colorMode}
+    lang={useDocusaurusContext().i18n.currentLocale}
+/>

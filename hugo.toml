@@ -1,0 +1,73 @@
+# 站点配置 —— Hugo 0.169
+# 本地预览：./bin/hugo server -D
+# 构建产物：./bin/hugo --gc --minify
+
+baseURL = "https://zhichii.github.io/"
+title = "山邱HillQiu"
+locale = "zh-CN"
+defaultContentLanguage = "zh-hans"
+hasCJKLanguage = true
+enableRobotsTXT = true
+summaryLength = 80
+
+[pagination]
+  pagerSize = 10
+
+[outputs]
+  home = ["HTML", "RSS"]
+  section = ["HTML", "RSS"]
+  taxonomy = ["HTML"]
+  term = ["HTML", "RSS"]
+
+[taxonomies]
+  tag = "tags"
+
+[params]
+  author = "山邱HillQiu"
+  description = "山邱HillQiu 的个人网站：日志、想法，以及一些自己做的东西。"
+  # 首页一句话介绍
+  tagline = "一个中学生的自留地：写代码、做启动器、偶尔写点东西。"
+  since = 2011
+
+  # giscus 评论（https://giscus.app 取 repoId 和 categoryId 后填进来，留空则不显示评论区）
+  [params.giscus]
+    repo = "Zhichii/zhichii.github.io"
+    repoId = ""
+    category = "Announcements"
+    categoryId = ""
+    mapping = "pathname"
+    strict = "0"
+    reactionsEnabled = "1"
+    emitMetadata = "0"
+    inputPosition = "top"
+    theme = "preferred_color_scheme"
+    lang = "zh-CN"
+
+[markup]
+  [markup.goldmark.renderer]
+    # 允许在 Markdown 里直接写 HTML（视频嵌入、<figure> 之类）
+    unsafe = true
+  [markup.goldmark.parser]
+    attribute = { block = true, title = true }
+  [markup.highlight]
+    style = "catppuccin-mocha"
+    noClasses = false
+    lineNos = false
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel = 3
+
+[[menus.main]]
+  name = "日志"
+  pageRef = "/blog"
+  weight = 10
+
+[[menus.main]]
+  name = "关于"
+  pageRef = "/about"
+  weight = 20
+
+[[menus.main]]
+  name = "标签"
+  pageRef = "/tags"
+  weight = 30

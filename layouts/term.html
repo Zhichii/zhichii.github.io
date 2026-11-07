@@ -1,0 +1,9 @@
+{{ define "main" }}
+<header class="list-header">
+  <h1>{{ .Title }}</h1>
+  <p class="meta">{{ len .Pages }} 篇文章</p>
+</header>
+<ul class="post-list">
+  {{ range .Pages }}{{ partial "post-item.html" . }}{{ end }}
+</ul>
+{{ end }}

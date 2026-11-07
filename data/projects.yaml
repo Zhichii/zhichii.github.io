@@ -1,0 +1,60 @@
+# 首页 / 关于页展示的作品列表
+- name: RiverLauncher2
+  cn: 河流启动器2
+  desc: Minecraft 启动器
+  group: 启动器
+  url: https://github.com/Zhichii/RiverLauncher2-RvFr
+
+- name: RiverLauncher3
+  cn: PortalToMinecraft
+  desc: 第三代河流启动器
+  group: 启动器
+  url: https://github.com/Zhichii/PortalToMinecraft
+
+- name: XMCX
+  cn: XMCX启动器
+  desc: 又一个 Minecraft 启动器
+  group: 启动器
+  url: https://github.com/Zhichii/xmcx
+
+- name: LauncherQiu-Core
+  cn: 启动器Qiu—核心
+  desc: 启动器核心库
+  group: 启动器
+  url: https://github.com/Zhichii/LauncherQiu-Core
+
+- name: MountainWorld
+  cn: 邱的世界
+  desc: 游戏
+  group: 游戏
+  url: https://github.com/Zhichii/MountainWorld
+
+- name: Craeft
+  cn: 千方百块
+  desc: 游戏
+  group: 游戏
+  url: https://github.com/Zhichii/Craeft
+
+- name: Whitestone
+  cn: 白石模组
+  desc: Minecraft 模组
+  group: 模组
+  url: https://github.com/Zhichii/Whitestone
+
+- name: tk4cpp
+  cn: C++的Tcl/Tk
+  desc: 让 C++ 用上 Tcl/Tk
+  group: 工具
+  url: https://github.com/Zhichii/tk4cpp
+
+- name: HTI
+  cn: 山邱文本用户界面
+  desc: 文本界面库
+  group: 工具
+  url: https://github.com/Zhichii/HTI
+
+- name: TwT2.3
+  cn: 与它们聊天2.3
+  desc: 和 AI 聊天的玩具
+  group: 工具
+  url: https://github.com/Zhichii/TwT2.3

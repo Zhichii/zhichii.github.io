@@ -1,0 +1,25 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>{{ site.Title }}</h1>
+  <p class="tagline">{{ site.Params.tagline }}</p>
+</section>
+
+{{ $posts := where site.RegularPages "Section" "blog" }}
+<section class="block">
+  <div class="block-head">
+    <h2>最新日志</h2>
+    <a class="more" href="{{ "/blog/" | relURL }}">全部 {{ len $posts }} 篇 →</a>
+  </div>
+  <ul class="post-list">
+    {{ range first 5 $posts }}{{ partial "post-item.html" . }}{{ end }}
+  </ul>
+</section>
+
+<section class="block">
+  <div class="block-head">
+    <h2>做的东西</h2>
+    <a class="more" href="{{ "/about/" | relURL }}">关于我 →</a>
+  </div>
+  {{ partial "projects.html" . }}
+</section>
+{{ end }}

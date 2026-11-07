@@ -1,0 +1,17 @@
+{{ define "main" }}
+<header class="list-header">
+  <h1>{{ .Title }}</h1>
+</header>
+{{ if .Pages }}
+<ul class="term-list">
+  {{ range .Pages }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+    <span class="count">{{ len .Pages }}</span>
+  </li>
+  {{ end }}
+</ul>
+{{ else }}
+<p class="empty">没有标签。</p>
+{{ end }}
+{{ end }}

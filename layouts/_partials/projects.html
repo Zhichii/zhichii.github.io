@@ -1,0 +1,19 @@
+{{ $groups := slice "启动器" "游戏" "模组" "工具" }}
+<div class="projects">
+  {{ range $groups }}
+    {{ $group := . }}
+    {{ with where hugo.Data.projects "group" $group }}
+      <div class="project-group">
+        <h3>{{ $group }}</h3>
+        <ul>
+          {{ range . }}
+          <li>
+            <a href="{{ .url }}">{{ .cn }}</a>
+            <span class="project-desc">{{ .desc }}</span>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>

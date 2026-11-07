@@ -1,0 +1,15 @@
+{{ define "main" }}
+<header class="list-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}<div class="prose">{{ . }}</div>{{ end }}
+</header>
+
+{{ $posts := where site.RegularPages "Section" .Section }}
+{{ if $posts }}
+<ul class="post-list">
+  {{ range $posts }}{{ partial "post-item.html" . }}{{ end }}
+</ul>
+{{ else }}
+<p class="empty">还没有文章。</p>
+{{ end }}
+{{ end }}

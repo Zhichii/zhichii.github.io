@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale | default "zh-CN" }}">
+{{ partial "head.html" . }}
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  {{ partial "header.html" . }}
+
+  <main id="main" class="wrap">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  {{ partial "footer.html" . }}
+  <script>
+    (() => {
+      const root = document.documentElement;
+      const btn = document.getElementById('theme-toggle');
+      if (!btn) return;
+      const apply = (mode) => {
+        if (mode === 'light' || mode === 'dark') {
+          root.dataset.theme = mode;
+          btn.querySelector('.theme-label').textContent = mode === 'dark' ? '亮' : '暗';
+          btn.setAttribute('aria-label', mode === 'dark' ? '切换到亮色' : '切换到暗色');
+        } else {
+          delete root.dataset.theme;
+          btn.querySelector('.theme-label').textContent = '自动';
+        }
+      };
+      apply(localStorage.getItem('theme'));
+      btn.addEventListener('click', () => {
+        const current = root.dataset.theme
+          || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        const next = current === 'dark' ? 'light' : 'dark';
+        try { localStorage.setItem('theme', next); } catch (e) {}
+        apply(next);
+      });
+    })();
+  </script>
+</body>
+</html>

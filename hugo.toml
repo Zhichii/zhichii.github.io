@@ -48,8 +48,9 @@ summaryLength = 80
     inputPosition = "top"
     loading = "lazy"
     lang = "zh-CN"
-    themeLight = "light"
-    themeDark = "dark"
+    # 自定义主题样式表（static/giscus/ 下），与站点配色和字体一致
+    themeLight = "/giscus/light.css"
+    themeDark = "/giscus/dark.css"
 
 [markup]
   [markup.goldmark.renderer]

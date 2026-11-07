@@ -44,7 +44,16 @@
       if (t === 'light' || t === 'dark') return t;
       return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
     };
-    const themeName = (mode) => (mode === 'dark' ? cfg.themeDark : cfg.themeLight);
+    // 配置里写 "/giscus/light.css" 这类站内路径时，按当前 origin 补成绝对地址
+    const resolveTheme = (value) =>
+      value && value.charAt(0) === '/' ? new URL(value, location.origin).href : value;
+    // giscus 的 iframe 在 https 上，自定义主题也必须是 https：
+    // 本地 http 预览时退回官方主题，免得被混合内容规则拦掉后变成没上妆的样子
+    const customThemeOK = location.protocol === 'https:';
+    const themeName = (mode) => {
+      if (!customThemeOK) return mode === 'dark' ? 'dark' : 'light';
+      return resolveTheme(mode === 'dark' ? cfg.themeDark : cfg.themeLight);
+    };
 
     const script = document.createElement('script');
     script.src = 'https://giscus.app/client.js';

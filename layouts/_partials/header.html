@@ -1,7 +1,9 @@
 <header class="site-header">
   <div class="wrap header-inner">
     <a class="brand" href="{{ "/" | relURL }}">
-      <span class="brand-mark">山</span>
+      {{ with site.Params.logo }}
+      <img class="brand-logo" src="{{ . | relURL }}" alt="" width="26" height="26">
+      {{ end }}
       <span class="brand-name">{{ site.Title }}</span>
     </a>
 

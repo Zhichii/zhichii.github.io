@@ -53,9 +53,13 @@ static/              原样复制的文件（favicon 等）
 ## 要改的地方
 
 - **评论区**：已接好（giscus，仓库 `Zhichii/zhichii.github.io`，分类 `General`），配置在
-  `hugo.toml` 的 `[params.giscus]`。默认按 `pathname` 映射，新文章不用管。
-  要从旧站继承某篇文章原来的评论串，在那篇文章的 front matter 里写 `giscusTerm: "3"`，
-  会自动切换成 `specific` 映射。
+  `hugo.toml` 的 `[params.giscus]`。
+
+  默认映射是 `specific`，term 取文章的 `slug`。这样中英文两个版本（`/blog/x/` 与
+  `/en/blog/x/`）共用同一个讨论串，URL 结构变了、尾斜杠有没有，都不会分叉。
+
+  想让某篇文章用固定的 term（例如继承旧站 `<Giscus term="3">` 的评论），在 front matter
+  写 `giscusTerm: "3"`。两个不同栏目的文章如果 slug 撞名，也用这个字段区分。
 - **作品列表**：`data/projects.yaml`。
 - **导航**：`hugo.toml` 的 `[[menus.main]]`。
 - **配色**：`assets/css/main.css` 顶部的 CSS 变量。

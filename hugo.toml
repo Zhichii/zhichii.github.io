@@ -35,9 +35,11 @@ summaryLength = 80
     repoId = "R_kgDOHXx1Mg"
     category = "General"
     categoryId = "DIC_kwDOHXx1Ms4C4YDq"
-    # pathname：按页面路径对应讨论，新文章不用再手写编号
-    # 迁移过来的旧文章可以在 front matter 里写 giscusTerm = "3" 指定 specific 映射，继承旧评论串
-    mapping = "pathname"
+    # specific：用 slug 当 term，跟语言、URL 结构、尾斜杠都无关
+    #   /blog/hello-hugo/ 和 /en/blog/hello-hugo/ 共用同一个讨论串
+    # 某篇文章要固定成别的 term（比如继承旧站的编号），在 front matter 里写 giscusTerm = "3"
+    # 想按路径对应就把它改成 "pathname"（多语言下会分成两个讨论串）
+    mapping = "specific"
     strict = "0"
     reactionsEnabled = "0"
     emitMetadata = "0"

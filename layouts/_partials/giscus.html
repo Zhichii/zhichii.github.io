@@ -6,8 +6,15 @@
   data-repo-id="{{ $g.repoId }}"
   data-category="{{ $g.category }}"
   data-category-id="{{ $g.categoryId }}"
-  data-mapping="{{ if .Params.giscusTerm }}specific{{ else }}{{ $g.mapping }}{{ end }}"
-  {{- with .Params.giscusTerm }}
+  {{- $mapping := $g.mapping -}}
+  {{- $term := "" -}}
+  {{- if eq $mapping "specific" -}}
+    {{- $term = .Params.giscusTerm | default .Slug -}}
+  {{- else if eq $mapping "number" -}}
+    {{- $term = .Params.giscusTerm -}}
+  {{- end -}}
+  data-mapping="{{ $mapping }}"
+  {{- with $term }}
   data-term="{{ . }}"
   {{- end }}
   data-strict="{{ $g.strict }}"

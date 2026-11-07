@@ -397,6 +397,19 @@ a.tag:hover { color: var(--accent); border-color: var(--accent); }
   overflow-x: auto;
   font-size: 0.865rem;
   line-height: 1.6;
+  /* 这站里代码块常用来放整段对话/长行，允许软换行比横向拖动好读 */
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+/* 代码块的 {title="..."} 会被 Hugo 放在 div 的 title 属性上，这里拿出来当说明文字 */
+.prose .highlight[title]::before {
+  content: attr(title);
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  margin-bottom: 0.3rem;
 }
 
 .prose pre code {

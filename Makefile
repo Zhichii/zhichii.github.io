@@ -15,4 +15,4 @@ clean:
 	rm -rf public resources/_cache
 
 new:
-	$(HUGO) new content/blog/$(shell date +%Y-%m-%d)-$(NAME).md
+	$(HUGO) new content/blog/$(NAME).md

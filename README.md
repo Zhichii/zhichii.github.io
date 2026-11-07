@@ -15,8 +15,19 @@ make build     # 生成到 public/
 ## 写东西
 
 ```bash
-make new NAME=文章标题        # 生成 content/blog/2026-11-07-文章标题.md
+make new NAME=my-new-post     # 生成 content/blog/my-new-post.md
 ```
+
+**文件名可以随便起**，Hugo 不会从文件名里读日期（`2026-03-12-` 这种前缀没有任何作用，
+留着也不影响）。但有三件事要清楚：
+
+- **必须是 `.md`**。Hugo 不认 `.mdx`，文件会被直接忽略，不报错。
+  迁过来的 4 篇 `.mdx` 已经转成 `.md` 了。
+- **`slug` 决定 URL**。没写就用文件名：中文文件名会变成一串 `%E9%9A%8F...`。
+- **`date` 必须自己写**。不写会回退到文件修改时间（本地看着正常，但 CI 上一 clone，
+  所有没写日期的文章会全变成构建当天，排序就乱了）。
+
+`make new` 用的模板在 `archetypes/blog.md`，会把这些字段都填好。
 
 文章就是 `content/blog/` 里的一个 Markdown 文件：
 

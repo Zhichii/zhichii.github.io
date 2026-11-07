@@ -77,3 +77,7 @@ summaryLength = 80
   name = "标签"
   pageRef = "/tags"
   weight = 30
+
+# 忘记写 date 时，回退到文件修改时间，免得日期变成 0001 年
+[frontmatter]
+  date = [":default", ":fileModTime"]

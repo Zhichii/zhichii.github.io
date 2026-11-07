@@ -1,14 +1,27 @@
 {{- /*
-  按 Minecraft 快照的日期写法输出：26w10f · 066 · 2026 年 3 月 7 日
+  按 Minecraft 快照的写法输出日期
   · 26        两位年份（取该周星期四所在的年份，即 ISO 年）
   · w10       ISO 周数
   · f         星期几，a=周一 … g=周日
   · 066       年内第几天，元旦记作 001
+
+  调用：
+   短格式  {{ partial "date-snapshot.html" (dict "date" .Date) }}
+           -> 26w10f · 066
+   长格式  {{ partial "date-snapshot.html" (dict "date" .Date "full" true) }}
+           -> 26w10f · 066 · 2026 年 3 月 7 日
 */ -}}
-{{- $d := .Date -}}
+{{- $d := .date -}}
+{{- $full := .full | default false -}}
 {{- $wd := int $d.Weekday -}}
 {{- $wdISO := add 1 (mod (add $wd 6) 7) -}}
 {{- $thu := $d.AddDate 0 0 (sub 4 $wdISO) -}}
 {{- $week := add 1 (div (sub $thu.YearDay 1) 7) -}}
 {{- $letter := index (slice "a" "b" "c" "d" "e" "f" "g") (sub $wdISO 1) -}}
-{{- printf "%sw%02d%s" ($thu.Format "06") $week $letter }} · {{ printf "%03d" $d.YearDay }} · {{ $d.Format "2006 年 1 月 2 日" -}}
+{{- $code := printf "%sw%02d%s" ($thu.Format "06") $week $letter -}}
+{{- $doy := printf "%03d" $d.YearDay -}}
+{{- if $full -}}
+{{ $code }} · {{ $doy }} · {{ $d.Format "2006 年 1 月 2 日" }}
+{{- else -}}
+{{ $code }} · {{ $doy }}
+{{- end -}}

@@ -29,8 +29,8 @@
   --font-serif: "Anthropic Serif Web", "OPPO Serif SC", "Noto Serif CJK SC",
     "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia,
     "Times New Roman", serif;
-  --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas,
-    "Liberation Mono", monospace;
+  --font-mono: "Anthropic Mono Web", ui-monospace, SFMono-Regular, Menlo,
+    Consolas, "Liberation Mono", monospace;
 
   --width: 44rem;
 }

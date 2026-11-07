@@ -1,19 +1,84 @@
 {{- $g := site.Params.giscus -}}
 {{- if and $g.repoId $g.categoryId -}}
-<script src="https://giscus.app/client.js"
+<div class="giscus"
+  id="giscus"
   data-repo="{{ $g.repo }}"
   data-repo-id="{{ $g.repoId }}"
   data-category="{{ $g.category }}"
   data-category-id="{{ $g.categoryId }}"
-  data-mapping="{{ $g.mapping }}"
+  data-mapping="{{ if .Params.giscusTerm }}specific{{ else }}{{ $g.mapping }}{{ end }}"
+  {{- with .Params.giscusTerm }}
+  data-term="{{ . }}"
+  {{- end }}
   data-strict="{{ $g.strict }}"
   data-reactions-enabled="{{ $g.reactionsEnabled }}"
   data-emit-metadata="{{ $g.emitMetadata }}"
   data-input-position="{{ $g.inputPosition }}"
-  data-theme="{{ $g.theme }}"
+  data-loading="{{ $g.loading }}"
   data-lang="{{ $g.lang }}"
-  crossorigin="anonymous"
-  async>
+  data-theme-light="{{ $g.themeLight }}"
+  data-theme-dark="{{ $g.themeDark }}"></div>
+
+<script>
+  (() => {
+    const box = document.getElementById('giscus');
+    if (!box) return;
+    const cfg = box.dataset;
+
+    const currentMode = () => {
+      const t = document.documentElement.dataset.theme;
+      if (t === 'light' || t === 'dark') return t;
+      return matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    };
+    const themeName = (mode) => (mode === 'dark' ? cfg.themeDark : cfg.themeLight);
+
+    const script = document.createElement('script');
+    script.src = 'https://giscus.app/client.js';
+    script.async = true;
+    script.crossOrigin = 'anonymous';
+
+    const attrs = {
+      'data-repo': cfg.repo,
+      'data-repo-id': cfg.repoId,
+      'data-category': cfg.category,
+      'data-category-id': cfg.categoryId,
+      'data-mapping': cfg.mapping,
+      'data-term': cfg.term,
+      'data-strict': cfg.strict,
+      'data-reactions-enabled': cfg.reactionsEnabled,
+      'data-emit-metadata': cfg.emitMetadata,
+      'data-input-position': cfg.inputPosition,
+      'data-loading': cfg.loading,
+      'data-lang': cfg.lang,
+      'data-theme': themeName(currentMode())
+    };
+    for (const [key, value] of Object.entries(attrs)) {
+      if (value) script.setAttribute(key, value);
+    }
+
+    // 站点切换深浅色时，把 iframe 里的 giscus 也跟着切
+    const push = (mode) => {
+      const frame = box.querySelector('iframe.giscus-frame');
+      if (frame && frame.contentWindow) {
+        frame.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: themeName(mode) } } },
+          'https://giscus.app'
+        );
+        return true;
+      }
+      return false;
+    };
+
+    document.addEventListener('themechange', (event) => push(event.detail));
+
+    // iframe 可能比这段脚本晚到；到齐之后再对齐一次主题
+    const observer = new MutationObserver(() => {
+      if (push(currentMode())) observer.disconnect();
+    });
+    observer.observe(box, { childList: true, subtree: true });
+
+    box.appendChild(script);
+  })();
 </script>
 {{- else -}}
 <div class="giscus-hint">

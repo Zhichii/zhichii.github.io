@@ -29,19 +29,23 @@ summaryLength = 80
   tagline = "一个中学生的自留地：写代码、做启动器、偶尔写点东西。"
   since = 2011
 
-  # giscus 评论（https://giscus.app 取 repoId 和 categoryId 后填进来，留空则不显示评论区）
+  # giscus 评论（https://giscus.app）
   [params.giscus]
     repo = "Zhichii/zhichii.github.io"
-    repoId = ""
-    category = "Announcements"
-    categoryId = ""
+    repoId = "R_kgDOHXx1Mg"
+    category = "General"
+    categoryId = "DIC_kwDOHXx1Ms4C4YDq"
+    # pathname：按页面路径对应讨论，新文章不用再手写编号
+    # 迁移过来的旧文章可以在 front matter 里写 giscusTerm = "3" 指定 specific 映射，继承旧评论串
     mapping = "pathname"
     strict = "0"
-    reactionsEnabled = "1"
+    reactionsEnabled = "0"
     emitMetadata = "0"
     inputPosition = "top"
-    theme = "preferred_color_scheme"
+    loading = "lazy"
     lang = "zh-CN"
+    themeLight = "light"
+    themeDark = "dark"
 
 [markup]
   [markup.goldmark.renderer]

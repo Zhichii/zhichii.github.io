@@ -1,5 +1,5 @@
 ---
-title: 把博客从 Docusaurus 换成 Hugo
+title: (DeepSeek Generated) 把博客从 Docusaurus 换成 Hugo
 date: 2026-11-07T15:00:00+08:00
 slug: hello-hugo
 tags: [建站, Hugo]
@@ -59,4 +59,6 @@ tags: [建站]
 
 ## 关于评论
 
-评论区用的是 giscus，挂在 GitHub Discussions 上。现在每篇文章底下都会显示，但需要先去 [giscus.app](https://giscus.app) 填一下仓库和分类，拿到 `repoId` 和 `categoryId` 塞进 `hugo.toml`，否则只会显示一行提示。
+评论区用的是 giscus，挂在 GitHub Discussions 上，每篇文章底部都会自动出现。它按页面路径对应讨论串，所以写新文章不用再额外配置。
+
+站点的深浅色切换也会同步到评论区里。

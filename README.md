@@ -52,8 +52,10 @@ static/              原样复制的文件（favicon 等）
 
 ## 要改的地方
 
-- **评论区**：`hugo.toml` 里的 `[params.giscus]`，去 [giscus.app](https://giscus.app) 取
-  `repoId` 和 `categoryId` 填上，否则文章底部只显示一行提示。
+- **评论区**：已接好（giscus，仓库 `Zhichii/zhichii.github.io`，分类 `General`），配置在
+  `hugo.toml` 的 `[params.giscus]`。默认按 `pathname` 映射，新文章不用管。
+  要从旧站继承某篇文章原来的评论串，在那篇文章的 front matter 里写 `giscusTerm: "3"`，
+  会自动切换成 `specific` 映射。
 - **作品列表**：`data/projects.yaml`。
 - **导航**：`hugo.toml` 的 `[[menus.main]]`。
 - **配色**：`assets/css/main.css` 顶部的 CSS 变量。

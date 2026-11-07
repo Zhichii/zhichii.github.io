@@ -15,23 +15,32 @@
       const root = document.documentElement;
       const btn = document.getElementById('theme-toggle');
       if (!btn) return;
-      const apply = (mode) => {
+      const label = btn.querySelector('.theme-label');
+
+      const resolved = (mode) =>
+        mode === 'light' || mode === 'dark'
+          ? mode
+          : matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light';
+
+      const paint = (mode) => {
         if (mode === 'light' || mode === 'dark') {
           root.dataset.theme = mode;
-          btn.querySelector('.theme-label').textContent = mode === 'dark' ? '亮' : '暗';
-          btn.setAttribute('aria-label', mode === 'dark' ? '切换到亮色' : '切换到暗色');
         } else {
           delete root.dataset.theme;
-          btn.querySelector('.theme-label').textContent = '自动';
         }
+        label.textContent = mode === 'dark' ? '亮' : mode === 'light' ? '暗' : '自动';
+        btn.setAttribute('aria-label', '切换到' + (resolved(mode) === 'dark' ? '亮色' : '暗色'));
       };
-      apply(localStorage.getItem('theme'));
+
+      paint(localStorage.getItem('theme'));
+
       btn.addEventListener('click', () => {
-        const current = root.dataset.theme
-          || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-        const next = current === 'dark' ? 'light' : 'dark';
+        const next = resolved(root.dataset.theme) === 'dark' ? 'light' : 'dark';
         try { localStorage.setItem('theme', next); } catch (e) {}
-        apply(next);
+        paint(next);
+        document.dispatchEvent(new CustomEvent('themechange', { detail: next }));
       });
     })();
   </script>

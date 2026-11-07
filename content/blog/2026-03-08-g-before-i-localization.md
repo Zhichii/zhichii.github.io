@@ -3,6 +3,7 @@ title: 我本地化了很多东西！
 date: 2026-03-08T12:00:00+08:00
 slug: localization
 tags: [publication]
+giscusMapping: number
 giscusTerm: "7"
 ---
 

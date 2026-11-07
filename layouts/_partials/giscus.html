@@ -6,12 +6,19 @@
   data-repo-id="{{ $g.repoId }}"
   data-category="{{ $g.category }}"
   data-category-id="{{ $g.categoryId }}"
-  {{- $mapping := $g.mapping -}}
+  {{- /* 单篇文章可以用 front matter 覆盖：giscusMapping / giscusTerm
+         number  = 直接指定讨论编号（迁移过来的旧文章用它继承原评论串）
+         specific = 按 term 精确匹配标题，term 缺省取 slug  */ -}}
+  {{- $mapping := .Params.giscusMapping | default $g.mapping -}}
   {{- $term := "" -}}
-  {{- if eq $mapping "specific" -}}
-    {{- $term = .Params.giscusTerm | default .Slug -}}
-  {{- else if eq $mapping "number" -}}
+  {{- if eq $mapping "number" -}}
     {{- $term = .Params.giscusTerm -}}
+    {{- if not $term -}}
+      {{- $mapping = "specific" -}}
+      {{- $term = .Slug -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $term = .Params.giscusTerm | default .Slug -}}
   {{- end -}}
   data-mapping="{{ $mapping }}"
   {{- with $term }}

@@ -3,6 +3,7 @@ title: 疑似看到真的DeepSeek泄漏
 date: 2026-04-03T12:00:00+08:00
 slug: 26w14a-deepseek-leak
 tags: [report]
+giscusMapping: number
 giscusTerm: "11"
 ---
 

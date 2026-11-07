@@ -58,8 +58,17 @@ static/              原样复制的文件（favicon 等）
   默认映射是 `specific`，term 取文章的 `slug`。这样中英文两个版本（`/blog/x/` 与
   `/en/blog/x/`）共用同一个讨论串，URL 结构变了、尾斜杠有没有，都不会分叉。
 
-  想让某篇文章用固定的 term（例如继承旧站 `<Giscus term="3">` 的评论），在 front matter
-  写 `giscusTerm: "3"`。两个不同栏目的文章如果 slug 撞名，也用这个字段区分。
+  想让某篇文章继承旧站的讨论串，在那篇文章的 front matter 写：
+
+  ```yaml
+  giscusMapping: number   # 按讨论编号取，而不是按标题匹配
+  giscusTerm: "5"         # 讨论编号，#5 = blog/h-alpha
+  ```
+
+  `number` 里的 term 是**讨论编号**（GitHub Discussions 里的 #5、#7 那种），
+  和 `specific` 的标题匹配是两回事，别混。迁移过来的 4 篇旧文章就是这样接回去的。
+
+  两个不同栏目的文章如果 slug 撞名，也可以用 `giscusTerm` 区分（配合 `specific`）。
 - **作品列表**：`data/projects.yaml`。
 - **导航**：`hugo.toml` 的 `[[menus.main]]`。
 - **配色**：`assets/css/main.css` 顶部的 CSS 变量。

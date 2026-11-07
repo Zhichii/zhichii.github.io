@@ -29,6 +29,9 @@
   --font-serif: "Anthropic Serif Web", "OPPO Serif SC", "Noto Serif CJK SC",
     "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia,
     "Times New Roman", serif;
+  /* 无衬线栈：给界面类元素（导航、按钮）备用，正文不用它 */
+  --font-sans: "Anthropic Sans Web", "OPPO Sans 4.0", -apple-system,
+    "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
   --font-mono: "Anthropic Mono Web", ui-monospace, SFMono-Regular, Menlo,
     Consolas, "Liberation Mono", monospace;
 

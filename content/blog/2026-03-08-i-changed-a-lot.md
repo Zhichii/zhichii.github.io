@@ -2,7 +2,7 @@
 title: 我改了很多东西！
 date: 2026-03-08T12:00:00+08:00
 slug: i-changed-a-lot
-tags: [publication]
+tags: [publication, 建站]
 ---
 
 *2026-11-07 更新：已迁移到 Hugo，本页面过期。*

@@ -114,7 +114,7 @@ a:hover { text-decoration-color: var(--accent); color: var(--accent); }
   flex: none;
 }
 
-.brand-name { font-size: 0.98rem; }
+.brand-name { font-size: 0.98rem; white-space: nowrap; }
 
 .nav {
   display: flex;
@@ -126,6 +126,7 @@ a:hover { text-decoration-color: var(--accent); color: var(--accent); }
 .nav a {
   color: var(--muted);
   text-decoration: none;
+  white-space: nowrap;
 }
 .nav a:hover,
 .nav a[aria-current="page"] { color: var(--fg); }
@@ -578,6 +579,9 @@ a.tag:hover { color: var(--accent); border-color: var(--accent); }
 /* ---------- 小屏 ---------- */
 
 @media (max-width: 34rem) {
+  .brand-name { display: none; }
+  .nav { gap: 0.7rem; font-size: 0.86rem; }
+  .theme-toggle { padding: 0.15rem 0.45rem; }
   .post-item {
     grid-template-columns: 1fr;
     gap: 0.15rem;

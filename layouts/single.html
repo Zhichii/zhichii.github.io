@@ -1,7 +1,9 @@
 {{ define "main" }}
+{{- $isPost := eq .Section "blog" -}}
 <article class="post">
   <header class="post-header">
     <h1>{{ .Title }}</h1>
+    {{ if $isPost }}
     <p class="meta">
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006 年 1 月 2 日" }}</time>
       <span class="dot">·</span>
@@ -11,6 +13,7 @@
       <span class="post-tags">{{ partial "tag-links.html" $ }}</span>
       {{ end }}
     </p>
+    {{ end }}
   </header>
 
   <div class="prose">
@@ -18,10 +21,12 @@
   </div>
 
   <footer class="post-footer">
+    {{ if $isPost }}
     <nav class="post-nav" aria-label="相邻文章">
       {{ with .NextInSection }}<a class="prev" href="{{ .RelPermalink }}">← {{ .Title }}</a>{{ end }}
       {{ with .PrevInSection }}<a class="next" href="{{ .RelPermalink }}">{{ .Title }} →</a>{{ end }}
     </nav>
+    {{ end }}
     {{ partial "giscus.html" . }}
   </footer>
 </article>

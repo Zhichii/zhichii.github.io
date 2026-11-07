@@ -76,9 +76,14 @@ summaryLength = 80
   weight = 20
 
 [[menus.main]]
+  name = "评论"
+  pageRef = "/comments"
+  weight = 30
+
+[[menus.main]]
   name = "标签"
   pageRef = "/tags"
-  weight = 30
+  weight = 40
 
 # 忘记写 date 时，回退到文件修改时间，免得日期变成 0001 年
 [frontmatter]

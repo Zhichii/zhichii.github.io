@@ -6,7 +6,7 @@ export HUGO_CACHEDIR := $(CURDIR)/resources/_cache
 .PHONY: serve build clean new
 
 serve:
-	$(HUGO) server -D --bind 127.0.0.1 --port 1313
+	$(HUGO) server -D --bind 127.0.0.1 --port 1313 --poll 700ms
 
 build:
 	$(HUGO) --gc --minify

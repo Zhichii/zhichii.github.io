@@ -7,6 +7,10 @@ giscusMapping: number
 giscusTerm: "7"
 ---
 
+*2026-11-07 更新：已迁移到 Hugo，本页面过期。*
+
+---
+
 我着手开始本地化……
 
 <!--more-->

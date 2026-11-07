@@ -23,9 +23,12 @@
   --accent-soft: light-dark(#f6e9e7, #2b1d1c);
   --code-bg: light-dark(#f7f7f4, #191918);
 
-  /* 纯系统字体：不下载任何字形文件，各系统用自己最好看的那个 */
-  --font-sans: system-ui, -apple-system, "Segoe UI", "PingFang SC",
-    "Hiragino Sans GB", "Microsoft YaHei", "Noto Sans CJK SC", sans-serif;
+  /* 正文字体：优先用系统里装的衬线字体，最后落到 Noto Serif CJK SC / 通用衬线。
+     前两个是个人偏好（Anthropic Serif Web、OPPO Serif SC），
+     后三个是跨平台兜底（macOS 宋体、Windows 宋体、思源宋体）。*/
+  --font-serif: "Anthropic Serif Web", "OPPO Serif SC", "Noto Serif CJK SC",
+    "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", Georgia,
+    "Times New Roman", serif;
   --font-mono: ui-monospace, SFMono-Regular, "JetBrains Mono", Menlo, Consolas,
     "Liberation Mono", monospace;
 
@@ -48,7 +51,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--fg);
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   font-size: 16px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
